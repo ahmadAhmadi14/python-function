@@ -6,12 +6,11 @@ class TwoSum():
    def solution(self):
       length = len(listNumber)
 
-      for i in range(length-1):
+      for i in range(length):
          for j in range(i+1, length):
-            if listNumber[i]+listNumber[j] ==self.target:
-               new_list = i, j
-               return list(new_list)
-      return -1         
+            sum = listNumber[i]+listNumber[j]
+            if sum == target:
+               return [i,j]
 
 
 listNumber = [3,2,4,5,11]
