@@ -1,17 +1,21 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-      :type nums: List[int]
-      :type target: int
-      :rtype: List[int]
-      """
-        required = {}
-        for i in range(len(nums)):
-         if target - nums[i] in required:
-            return [required[target - nums[i]],i]
-         else:
-            required[nums[i]]=i
+class TwoSum():
+   def __init__(self, listNumber, target):
+      self.listNumber = listNumber
+      self.target = target
 
-input_list = [2,12,8,5] 
-ob1 = Solution()
-print(ob1.twoSum(input_list, 10))
+   def solution(self):
+      length = len(listNumber)
+
+      for i in range(length-1):
+         for j in range(i+1, length):
+            if listNumber[i]+listNumber[j] ==self.target:
+               new_list = i, j
+               return list(new_list)
+      return -1         
+
+
+listNumber = [3,2,4,5,11]
+target = 6
+listNumberTarget = TwoSum(listNumber, target)
+print(listNumberTarget.solution())
+
