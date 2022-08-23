@@ -18,3 +18,10 @@ target = 6
 listNumberTarget = TwoSum(listNumber, target)
 print(listNumberTarget.solution())
 
+'''angka = [5,4,3,2,1]
+target = 6
+for x in angka:
+   for y in angka:
+      sum = x+y
+      if sum == target:
+         print(sum, target)'''
