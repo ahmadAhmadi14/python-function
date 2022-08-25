@@ -1,5 +1,4 @@
-def bigSorting(unsorted):
-    # Write your code here
+def sortingList(unsorted):
     ans=[]
     dic={}
     for i in unsorted:
@@ -11,5 +10,5 @@ def bigSorting(unsorted):
     return ans
 
 
-unsorted1 = bigSorting(['1', '200', '150', '3'])
+unsorted1 = sortingList(['1', '200', '150', '3'])
 print(unsorted1)
