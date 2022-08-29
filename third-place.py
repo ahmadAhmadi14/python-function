@@ -7,6 +7,7 @@ def third_place(names, scores):
         if third_place == score:
             winner.append(name)
     print(f"the third place are"," and ".join(winner))    
+    print(winner)
 
 
 names = ['andi', 'iman', 'budi', 'leo', 'grace']
