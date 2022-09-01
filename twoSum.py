@@ -6,8 +6,6 @@ def twoSum(listNumber, target):
               return [i,j]
             
         
-    
-    
 listnumber = ((5, 7, 10, 50, 80))
 target = 60
 print(twoSum(listnumber, target))
