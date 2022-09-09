@@ -1,14 +1,13 @@
-def get_prime_factors(N):
-    factors = list()
+def get_prime_factor(num):
+    factor = list()
     divisor = 2
-    while(divisor <= N):
-        if(N % divisor) == 0:
-            factors.append(divisor)
-            N = N//divisor
+    while(divisor <= num):
+        if(num % divisor) == 0:
+            factor.append(divisor)
+            num = num // divisor
         else:
-            divisor += 1
-    return factors
+            divisor +=1
+    return factor
 
 
-print(get_prime_factors(250))
-
+print(get_prime_factor(250))
