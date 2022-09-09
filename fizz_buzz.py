@@ -7,4 +7,4 @@ def fizz_buzz(input):
         return 'Buzz'
     return input
 
-print(fizz_buzz(7))
+print(fizz_buzz(1))
